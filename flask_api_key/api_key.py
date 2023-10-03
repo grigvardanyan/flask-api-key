@@ -4,7 +4,7 @@
 import secrets
 import string
 from uuid import uuid4
-from flask import _request_ctx_stack
+from flask.globals import __request_ctx_stack
 
 from .exceptions import MalformedAPIKey
 from .exceptions import YouMustBeLost
