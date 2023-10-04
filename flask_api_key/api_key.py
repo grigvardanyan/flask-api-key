@@ -114,7 +114,7 @@ class APIKey(object):
         if obj is None:
             raise APIKeyNotFound()
 
-        _request_ctx_stack.top.api_key = obj
+        request_ctx.top.api_key = obj
         return obj
 
     def verify_key(self, unverified_key):
