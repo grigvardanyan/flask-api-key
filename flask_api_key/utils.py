@@ -3,7 +3,7 @@
 """
 
 from flask import current_app
-from flask.globals import __request_ctx_stack
+from flask.globals import request_ctx
 from werkzeug.local import LocalProxy
 
 
