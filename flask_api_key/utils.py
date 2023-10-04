@@ -12,7 +12,7 @@ current_api_key = LocalProxy(lambda: get_api_key())
 
 
 def get_api_key():
-    ak = getattr(_request_ctx_stack.top, 'api_key', None)
+    ak = getattr(request_ctx.top, 'api_key', None)
     return ak
 
 
